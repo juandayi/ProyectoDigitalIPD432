@@ -1,0 +1,33 @@
+clear all;
+Fs = 1000;            % Sampling frequency
+T = 1/Fs;             % Sampling period
+L = 1024;             % Length of signal
+t = (0:L-1)*T;        % Time vector
+recObj = audiorecorder;
+disp('Start speaking.')
+recordblocking(recObj, 5);
+disp('End of Recording.');
+play(recObj);
+y = getaudiodata(recObj);
+plot(y);
+
+m = length(y);      % Window length
+n = pow2(nextpow2(m));  % Transform length
+soundsc(y,Fs);
+
+FFT_Result = fft(y, n);
+P2_matlab = abs(FFT_Result/L);
+P1_matlab = P2_matlab(1:L/2+1);
+P1_matlab_normalizado=P1_matlab./max(P1_matlab);
+P1_matlab(2:end-1) = 2*P1_matlab(2:end-1);
+figure(3);
+f = Fs*(0:(L/2))/L;
+plot(f,P1_matlab_normalizado);
+% title('Single-Sided Amplitude Spectrum of Signal')
+xlabel('f (Hz)')
+ylabel('|P1(f)|')
+
+Dato = ifft(FFT_Result);
+figure(4);
+plot(Dato);
+soundsc(Dato)

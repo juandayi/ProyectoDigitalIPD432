@@ -1,0 +1,15 @@
+filename = 'datafft.txt';
+q = quantizer('fixed', 'nearest', 'saturate', [16 12]);% quantizer object for num2hex function  
+FID = fopen(filename);
+dataFromfile = textscan(FID, '%s');% %s for reading string values (hexadecimal numbers)
+dataFromfile=dataFromfile{1};
+dataFromfile_num = cell2mat(dataFromfile);
+for i=1:1:33
+ =hex2num(q, dataFromfile_num(i,1:4));
+ real_array=hex2num(q, dataFromfile_num(i,5:8)); 
+ complex_array(i)=complex(real_array,imaginary_array);
+    
+end
+% decData = hex2num(q, dataFromfile);
+% decData = cell2mat(decData);
+fclose(FID);

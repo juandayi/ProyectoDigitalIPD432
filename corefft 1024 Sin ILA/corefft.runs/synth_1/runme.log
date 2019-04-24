@@ -1,0 +1,808 @@
+
+*** Running vivado
+    with args -log Main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Main.tcl -notrace
+Command: synth_design -top Main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21184 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 390.297 ; gain = 101.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/Main.sv:2]
+	Parameter N bound to: 32 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.runs/synth_1/.Xil/Vivado-8648-DESKTOP-U2FBRCJ/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.runs/synth_1/.Xil/Vivado-8648-DESKTOP-U2FBRCJ/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_driver' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_rx_driver.sv:3]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 8 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 7 - type: integer 
+	Parameter INCREMENT bound to: 2416 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:36]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen' (2#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_rx.sv:10]
+	Parameter RX_IDLE bound to: 0 - type: integer 
+	Parameter RX_START bound to: 1 - type: integer 
+	Parameter RX_RECV bound to: 2 - type: integer 
+	Parameter RX_STOP bound to: 3 - type: integer 
+	Parameter RX_READY bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'data_sync' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/User_Custom_UartPort_1.0/data_sync.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'data_sync' (3#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/User_Custom_UartPort_1.0/data_sync.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_rx.sv:78]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (4#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_rx.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_driver' (5#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_rx_driver.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_driver' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_tx_driver.sv:3]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen__parameterized0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter OVERSAMPLING bound to: 1 - type: integer 
+	Parameter ACC_WIDTH bound to: 18 - type: integer 
+	Parameter SHIFT_LIMITER bound to: 4 - type: integer 
+	Parameter INCREMENT bound to: 302 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen__parameterized0' (5#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_tx.sv:10]
+	Parameter TX_IDLE bound to: 2'b00 
+	Parameter TX_START bound to: 2'b01 
+	Parameter TX_SEND bound to: 2'b10 
+	Parameter TX_STOP bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (6#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_tx.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_driver' (7#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/uart_tx_driver.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Save' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/Save.sv:3]
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+	Parameter ADDRA_MAX bound to: 10'b1111111111 
+WARNING: [Synth 8-87] always_comb on 'LED_reg' did not result in combinational logic [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/Save.sv:41]
+INFO: [Synth 8-6155] done synthesizing module 'Save' (8#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/Save.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.runs/synth_1/.Xil/Vivado-8648-DESKTOP-U2FBRCJ/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (9#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.runs/synth_1/.Xil/Vivado-8648-DESKTOP-U2FBRCJ/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FFT' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/FFT.sv:5]
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xfft_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.runs/synth_1/.Xil/Vivado-8648-DESKTOP-U2FBRCJ/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xfft_0' (10#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.runs/synth_1/.Xil/Vivado-8648-DESKTOP-U2FBRCJ/realtime/xfft_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axis_config_tdata' does not match port width (24) of module 'xfft_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/FFT.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'LoadFFT' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/LoadFFT.sv:5]
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+	Parameter ADDRA_MAX bound to: 10'b1111111111 
+WARNING: [Synth 8-87] always_comb on 'LED_reg' did not result in combinational logic [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/LoadFFT.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'LoadFFT' (11#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/LoadFFT.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'UnloadFFT' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/UnloadFFT.sv:5]
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+	Parameter ADDRA_MAX bound to: 10'b1111111111 
+INFO: [Synth 8-6155] done synthesizing module 'UnloadFFT' (12#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/UnloadFFT.sv:5]
+WARNING: [Synth 8-3848] Net s_axis_data_tlast in module/entity FFT does not have driver. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/FFT.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (13#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/FFT.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'SendUART' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/Sender.sv:2]
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+	Parameter ADDRA_MAX bound to: 10'b1111111111 
+INFO: [Synth 8-6155] done synthesizing module 'SendUART' (14#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/Sender.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (15#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/Main.sv:2]
+WARNING: [Synth 8-3331] design LoadFFT has unconnected port config_tready
+WARNING: [Synth 8-3331] design Save has unconnected port enable
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 445.387 ; gain = 156.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 445.387 ; gain = 156.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 445.387 ; gain = 156.586
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
+Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
+Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'FFT/FFTcore'
+Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'FFT/FFTcore'
+Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_tiempo'
+Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_tiempo'
+Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_frecuencia'
+Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_frecuencia'
+Parsing XDC File [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[7]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:53]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[10]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:54]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[15]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:55]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[18]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:56]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[20]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:57]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[25]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:58]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[31]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:59]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[9]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:61]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[12]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:62]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[19]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:63]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[21]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[24]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:65]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[28]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[13]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:70]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:71]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[8]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:72]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[16]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:73]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[22]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:74]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[27]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:75]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[29]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:76]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[30]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:77]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:78]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[11]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:79]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[14]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[17]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:81]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[23]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:82]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[26]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:83]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:85]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[7]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:86]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[11]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:87]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[21]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:88]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[25]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:89]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[27]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:90]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:91]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[14]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[15]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:93]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[17]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:94]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[18]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:95]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[24]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[28]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:97]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[29]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:98]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:99]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:101]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[10]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:102]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[13]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:103]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[16]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:104]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[23]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:105]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[30]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:106]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[31]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:107]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:108]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[8]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:109]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[9]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:110]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[12]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:111]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[19]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:112]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[20]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:113]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[22]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:114]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[26]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:115]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:116]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:117]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:118]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:119]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:120]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:121]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:122]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:123]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:124]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc:125]
+Finished Parsing XDC File [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Main_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/constrs_1/imports/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 801.039 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'datos_dominio_frecuencia' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'datos_dominio_tiempo' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 801.039 ; gain = 512.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 801.039 ; gain = 512.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clkin. (constraint file  {d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clkin. (constraint file  {d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for CLK. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for FFT/FFTcore. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for datos_dominio_frecuencia. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for datos_dominio_tiempo. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 801.039 ; gain = 512.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-5544] ROM "rx_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-5544] ROM "tx_busy" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'actual_reg' in module 'Save'
+INFO: [Synth 8-5546] ROM "LED" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "save_finish_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dir_in_uart_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LED" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "LED" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "proximo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'actual_reg' in module 'UnloadFFT'
+INFO: [Synth 8-5546] ROM "dato_frequency_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "save_ok_frequency_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "proximo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "proximo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'actual_reg' in module 'SendUART'
+INFO: [Synth 8-5546] ROM "proximo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tx_data_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_start_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dir_out_uart_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "proximo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "proximo" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_IDLE |                              000 |                              000
+                RX_START |                              001 |                              001
+                 RX_RECV |                              010 |                              010
+                 RX_STOP |                              011 |                              011
+                RX_READY |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 TX_IDLE |                               00 |                               00
+                TX_START |                               01 |                               01
+                 TX_SEND |                               10 |                               10
+                 TX_STOP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                   SAVE1 |                              001 |                             0001
+                   SAVE2 |                              010 |                             0010
+                   SAVE3 |                              011 |                             0011
+                   WRITE |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'actual_reg' using encoding 'sequential' in module 'Save'
+WARNING: [Synth 8-327] inferring latch for variable 'LED_reg' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/imports/new/Save.sv:41]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_reg' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.srcs/sources_1/new/LoadFFT.sv:49]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                              000
+                   SAVE1 |                             0010 |                              001
+                WAITSAVE |                             0100 |                              011
+                     SET |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'actual_reg' using encoding 'one-hot' in module 'UnloadFFT'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                      00000000001 |                             0000
+                 WAITING |                      00000000010 |                             0001
+                   SEND1 |                      00000000100 |                             0011
+                WAITING1 |                      00000001000 |                             0100
+                   SEND2 |                      00000010000 |                             0101
+                WAITING2 |                      00000100000 |                             0110
+                   SEND3 |                      00001000000 |                             0111
+                WAITING3 |                      00010000000 |                             1000
+                   SEND4 |                      00100000000 |                             1001
+                WAITING4 |                      01000000000 |                             1010
+                  SETDIR |                      10000000000 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'actual_reg' using encoding 'one-hot' in module 'SendUART'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 801.039 ; gain = 512.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               19 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 6     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   5 Input     11 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 11    
+	   4 Input     10 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_baud_tick_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module data_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+Module uart_rx_driver 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module uart_baud_tick_gen__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module Save 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 4     
+Module LoadFFT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     11 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+Module UnloadFFT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     11 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+Module SendUART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 11    
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	  11 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "SendUART/proximo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SaveUART/save_finish_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SaveUART/LED" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FFT/LoadFFT/proximo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FFT/LoadFFT/LED" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FFT/UnloadFFT/proximo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FFT/UnloadFFT/save_ok_frequency_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FFT/UnloadFFT/dato_frequency_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SendUART/proximo" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\FFT/LoadFFT/config_tvalid_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\FFT/LoadFFT/config_tdata_reg )
+INFO: [Synth 8-3886] merging instance 'FFT/LoadFFT/LED_reg[0]' (LD) to 'FFT/LoadFFT/LED_reg[1]'
+INFO: [Synth 8-3886] merging instance 'FFT/LoadFFT/LED_reg[4]' (LD) to 'FFT/LoadFFT/LED_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\FFT/LoadFFT/LED_reg[5] )
+INFO: [Synth 8-3886] merging instance 'SaveUART/LED_reg[0]' (LD) to 'SaveUART/LED_reg[1]'
+INFO: [Synth 8-3886] merging instance 'SaveUART/LED_reg[1]' (LD) to 'SaveUART/LED_reg[2]'
+INFO: [Synth 8-3886] merging instance 'SaveUART/LED_reg[2]' (LD) to 'SaveUART/LED_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SaveUART/LED_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (SaveUART/LED_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (FFT/LoadFFT/LED_reg[5]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (FFT/LoadFFT/config_tvalid_reg) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (FFT/LoadFFT/config_tdata_reg) is unused and will be removed from module Main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 801.039 ; gain = 512.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK/clk_out1' to pin 'CLK/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 801.039 ; gain = 512.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 811.875 ; gain = 523.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 815.078 ; gain = 526.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \FFT/FFTcore  has unconnected pin s_axis_data_tlast
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 815.078 ; gain = 526.277
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 815.078 ; gain = 526.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 815.078 ; gain = 526.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 815.078 ; gain = 526.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 815.078 ; gain = 526.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 815.078 ; gain = 526.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_0 |         2|
+|3     |xfft_0        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |blk_mem_gen_0    |     1|
+|2     |blk_mem_gen_0__1 |     1|
+|3     |clk_wiz_0        |     1|
+|4     |xfft_0           |     1|
+|5     |CARRY4           |     9|
+|6     |LUT1             |    17|
+|7     |LUT2             |    17|
+|8     |LUT3             |    27|
+|9     |LUT4             |    31|
+|10    |LUT5             |    44|
+|11    |LUT6             |    73|
+|12    |FDRE             |   265|
+|13    |FDSE             |     5|
+|14    |LD               |     7|
+|15    |IBUF             |     1|
+|16    |OBUF             |    15|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------------------------------+------+
+|      |Instance           |Module                             |Cells |
++------+-------------------+-----------------------------------+------+
+|1     |top                |                                   |   618|
+|2     |  FFT              |FFT                                |   229|
+|3     |    LoadFFT        |LoadFFT                            |    94|
+|4     |    UnloadFFT      |UnloadFFT                          |    93|
+|5     |  RX               |uart_rx_driver                     |    72|
+|6     |    baud8_tick_blk |uart_baud_tick_gen                 |    28|
+|7     |    uart_rx_blk    |uart_rx                            |    42|
+|8     |      rx_sync_inst |data_sync                          |    13|
+|9     |  SaveUART         |Save                               |    76|
+|10    |  SendUART         |SendUART                           |   103|
+|11    |  TX               |uart_tx_driver                     |    57|
+|12    |    baud_tick_blk  |uart_baud_tick_gen__parameterized0 |    29|
+|13    |    uart_tx_blk    |uart_tx                            |    28|
++------+-------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 815.078 ; gain = 526.277
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 815.078 ; gain = 170.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 815.078 ; gain = 526.277
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  LD => LDCE: 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+111 Infos, 159 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 815.078 ; gain = 537.746
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 1024 Sin ILA/corefft.runs/synth_1/Main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 815.078 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 00:04:06 2019...

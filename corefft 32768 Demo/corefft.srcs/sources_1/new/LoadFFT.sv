@@ -1,5 +1,7 @@
 `timescale 1ns / 1ps
 
+//Módulo encargado de proporcionar o cargar los datos al Core FFT. Siendo el master externo que le 
+//proporciona las señales necesarias para la comunicación AXI4 Stream con el Core FFT
 
 
 module LoadFFT #(parameter M=15, N = 32)(

@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-
+//Módulo donde son instanciados los módulos que permiten cargar y descargar los datos al Core FFT 
 
 module FFT #(parameter M = 10, N = 32)(
     input logic clkin,
@@ -9,8 +9,8 @@ module FFT #(parameter M = 10, N = 32)(
     output logic [M - 1:0] dir_in_fft,
     output logic [N - 1:0] dato_out_fft,
     output logic [M - 1:0]  dir_out_fft,
-    output logic save_ok_frequency,
-    output  logic [6:0] LED
+    output logic save_ok_frequency
+    
     );
 
 //Modulo LoadFFT
@@ -65,8 +65,8 @@ LoadFFT LoadFFT(
     .data_tdata(data_tdata),
     .config_tdata(config_tdata),
     .config_tvalid(config_tvalid),
-    .config_tready(config_tready),
-    .LED(LED)
+    .config_tready(config_tready)
+    
 );
 
 UnloadFFT UnloadFFT(
@@ -78,7 +78,7 @@ UnloadFFT UnloadFFT(
     .m_tready(m_data_tready),
     .dato_frequency(dato_out_fft),
     .save_ok_frequency(save_ok_frequency)
-//    .LED(LED)
+
     );
 
 //ila_0 ILA(
@@ -96,13 +96,6 @@ UnloadFFT UnloadFFT(
 //                 .probe9(m_data_tready) // input wire [0:0]  probe9
 //             );
              
-//always_ff @(posedge clkin) begin
-//s_axis_config_tvalid<=1'b1;
-//if (s_axis_config_tready==1'b1)
-//s_axis_config_tdata<= 16'b0000010101010101;
-//else
-//s_axis_config_tdata<= 16'b0000000000000000;
-//end
 
 
 endmodule

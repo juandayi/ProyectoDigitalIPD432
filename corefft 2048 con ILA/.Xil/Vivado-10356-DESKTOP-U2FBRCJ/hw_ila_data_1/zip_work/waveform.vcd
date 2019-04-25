@@ -1,0 +1,39 @@
+$date
+        2019-Feb-22 16:49:44
+$end
+$version
+        Vivado v2018.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " <const0> $end
+$var reg 1 # <const0>_1 $end
+$var reg 1 $ <const0>_2 $end
+$var reg 1 % <const0>_3 $end
+$var reg 1 & <const0>_4 $end
+$var reg 32 ' your_instance_name/dina [31:0] $end
+$var reg 5 G your_instance_name/addra [4:0] $end
+$var reg 32 L your_instance_name/doutb [31:0] $end
+$var reg 1 l _TRIGGER $end
+$var reg 1 m _WINDOW $end
+$var reg 1 n _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+0#
+0$
+0%
+0&
+b0 '
+b0 G
+b0 L
+0l
+1m
+0n
+$end
+#1024
+1l

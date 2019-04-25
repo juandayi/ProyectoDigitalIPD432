@@ -1,4 +1,9 @@
 `timescale 1ns / 1ps
+
+//Módulo encargado de enviar los datos por el puerto Uart y desempaquetarlos del formato de 32 bits 
+//(16 bits datos reales y 16 bits datos imaginarios) para enviar de 8 bits en 8 bits debido a la limitación 
+//del puerto Uart
+
 module SendUART#(parameter M = 15, N=32 )(
 	input logic clkin,
     input logic reset,

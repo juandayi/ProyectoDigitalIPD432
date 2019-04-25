@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
-
+//Módulo encargado de proporcionar o cargar los datos al Core FFT. Siendo el master externo que le 
+//proporciona las señales necesarias para la comunicación AXI4 Stream con el Core FFT
 
 module LoadFFT #(parameter M=10, N = 32)(
     input logic clk,
@@ -13,8 +14,8 @@ module LoadFFT #(parameter M=10, N = 32)(
     output logic [31:0] data_tdata,   //entrada del core fft
     output logic config_tvalid,       //datos de configuracion del core fft
     input logic  config_tready,       //datos de configuracion del core fft
-    output logic config_tdata,         //datos de configuracion del core fft
-    output  logic [6:0] LED
+    output logic config_tdata         //datos de configuracion del core fft
+    
     );
       typedef enum logic [2:0] {IDLE, CONFIGFFT, WAITFFT, SET, SENDFFT, WAITING} state;
       state actual, proximo; 
@@ -40,13 +41,10 @@ module LoadFFT #(parameter M=10, N = 32)(
                     data_tvalid_next = 1'b0;
                     config_tvalid_next= 1'b0;
                     config_tdata_next=16'b0000010101010101;
-//                    LED=7'b0001000;
+
                     case(actual)
-                        IDLE: begin
-                            
-//                            LED=7'b0000001;
-                            if (save_ok) begin
-                            LED=7'b1000000;
+                        IDLE: begin                           
+                            if (save_ok) begin                            
                             proximo = SET;
                             end
                             else
@@ -78,7 +76,7 @@ module LoadFFT #(parameter M=10, N = 32)(
                               
                        SENDFFT: begin
                                
-                               LED=7'b0000011;
+                              
                                if(data_tready) begin
                                    data_tvalid_next = 1'b1;
                                    data_tdata_next=dato_time;
@@ -96,12 +94,12 @@ module LoadFFT #(parameter M=10, N = 32)(
                              begin 
                                   dir_time_next = 5'd0; 
                                   proximo = IDLE;
-                                  LED=7'b0000100;
+                                  
                              end
                             else begin                                            
                                  dir_time_next = dir_time + 5'd1;  
                                  proximo = SET; 
-                                 LED=7'b0001000;                                     
+                                                                    
                             end                                           
                             end
                         default: proximo = IDLE;

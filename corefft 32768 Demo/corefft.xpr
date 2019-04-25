@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.xpr">
+<Project Version="7" Minor="38" Path="D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4067c0b614fa43479471b6ee4d3a24da"/>

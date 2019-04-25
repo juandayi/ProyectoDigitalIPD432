@@ -1,3 +1,7 @@
+% % Diseño para el core FFT configurado para 32768 muestras. Con el uso de los script de Matlab permite grabar la voz durante
+%  4 segundos, enviar las muestras al core fft y luego calcular la transformada inversa a las muestras devueltas por el core usando la
+% función de transformada inversa de matlab y es posible oir lo que se grabó previamente.
+
 clear all;
 Fs = 8000;            % Sampling frequency
 T = 1/Fs;             % Sampling period

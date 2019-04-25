@@ -1,9 +1,9 @@
 clear all;
 Fs = 1000;            % Sampling frequency
 T = 1/Fs;             % Sampling period
-L = 1024;             % Length of signal
+L = 1024;             % Length of signal Cantidad de muestras de la transformada de Fourier
 t = (0:L-1)*T;        % Time vector
-S = 0.7*sin(2*pi*350*t) + sin(2*pi*450*t); % Señal a ser muestreada
+S = 0.7*sin(2*pi*50*t) + sin(2*pi*120*t); % Señal a ser muestreada. Pueden ser cambiadas las frecuencias de las funciones senos
 SEN=sin(2*pi*100*t);
 X = S + 2*randn(size(t)); % Señal a ser muestreada + ruido
 figure(1);
@@ -33,7 +33,7 @@ ylabel('|P1(f)|')
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Procesado de los datos para enviar a la FPGA(Conversión a complemento a dos).
+%Procesado de los datos para enviar a la FPGA.
 
 q=quantizer([16 12]); % 12 Crea el cuantizador para un formato punto fijo con tamaño de palabra de 16 bit con 12 bit de parte fraccionaria
 b = num2bin(q,X);     %Convierte de numero a String binario usando el cuantizador anterior
@@ -59,6 +59,8 @@ for i=1:4:L*4
    j=j+1;
 end
 sal=aux;
+
+%Procesado de los datos para enviar a la FPGA.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -73,6 +75,7 @@ y=fread(s,L*4);
 fclose(s);
 % fclose(s);
 
+%Tx y Rx puerto uart
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,16 +105,16 @@ figure(4);
 f = Fs*(0:(L/2))/L;
 plot(f,P1_fpga_normalizado,'green', 'DisplayName','Core FFT FPGA');
 hold on
-plot(f,P1_matlab_normalizado,'b--o', 'DisplayName','FFT Matlab ');
+plot(f,P1_matlab_normalizado,'blue', 'DisplayName','FFT Matlab ');
 
 legend('Core FFT FPGA','FFT Matlab');
 xlabel('f (Hz)')
 ylabel('|P1(f)|')
 resta=P1_fpga_normalizado-P1_matlab_normalizado;
-% err(1)=norm(P1_fpga_normalizado-P1_matlab_normalizado);
 
 % Error cuadratico medio entre la FFT calculada por Matlab y la calculada
 % por el Core FFT de Xilinx
 RMSE = sqrt(mean((resta).^2));
 
+%%Procesando los datos enviados por la FPGA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

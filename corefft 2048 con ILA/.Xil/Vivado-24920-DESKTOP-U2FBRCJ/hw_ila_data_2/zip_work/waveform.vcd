@@ -1,0 +1,20 @@
+$date
+        2019-Apr-24 09:48:39
+$end
+$version
+        Vivado v2018.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 5 " dir_frequency [4:0] $end
+$var reg 5 ' dir_out_uart [4:0] $end
+$var reg 32 , dato_frequency [31:0] $end
+$var reg 32 L dato_uart_out [31:0] $end
+$var reg 1 l save_ok_frequency $end
+$var reg 1 m _TRIGGER $end
+$var reg 1 n _WINDOW $end
+$var reg 1 o _GAP $end
+$upscope $end
+$enddefinitions $end

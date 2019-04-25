@@ -17,47 +17,43 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/.Xil/Vivado-7376-DESKTOP-U2FBRCJ/incrSyn}
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.cache/wt} [current_project]
-set_property parent.project_path {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.xpr} [current_project]
+set_property webtalk.parent_dir {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.cache/wt} [current_project]
+set_property parent.project_path {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.xpr} [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.cache/ip} [current_project]
+set_property ip_output_repo {d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/FFT.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/LoadFFT.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/Save.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/Sender.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/UnloadFFT.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_rx.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_rx_driver.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_tx.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_tx_driver.sv}
-  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/Main.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/FFT.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/LoadFFT.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/Save.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/Sender.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/UnloadFFT.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_rx.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_rx_driver.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_tx.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_tx_driver.sv}
+  {D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/Main.sv}
 }
-read_verilog -library xil_defaultlib {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/User_Custom_UartPort_1.0/data_sync.v}}
-read_ip -quiet {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
-set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
+read_verilog -library xil_defaultlib {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/User_Custom_UartPort_1.0/data_sync.v}}
+read_ip -quiet {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
 
-read_ip -quiet {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/xfft_0/xfft_0.xci}}
-set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/xfft_0/xfft_0_ooc.xdc}}]
+read_ip -quiet {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/xfft_0/xfft_0.xci}}
+set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/xfft_0/xfft_0_ooc.xdc}}]
 
-read_ip -quiet {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc}}]
+read_ip -quiet {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -67,8 +63,8 @@ set_property used_in_implementation false [get_files -all {{d:/Proyecto Final Di
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc}}
-set_property used_in_implementation false [get_files {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc}}]
+read_xdc {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc}}
+set_property used_in_implementation false [get_files {{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

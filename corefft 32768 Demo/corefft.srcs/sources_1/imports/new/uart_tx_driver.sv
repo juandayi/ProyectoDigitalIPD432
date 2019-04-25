@@ -1,5 +1,10 @@
 `timescale 1ns / 1ps
 
+//Este módulo crea un driver para la Tx por el puerto Uart, basado en el código desarrollado por Felipe Veas de la USM. Este modulo permite configurar
+//el baud rate (baudios) con el que se transmiten los datos hacia la PC, el valor que trae por defecto es 115200
+//baudios. Ademas permite configurar la frecuencia del reloj a la que trabajara el módulo.
+
+
 module uart_tx_driver(
     input clk,
 	input reset,

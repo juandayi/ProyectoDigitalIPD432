@@ -1,5 +1,10 @@
 `timescale 1ns / 1ps
 
+//Este módulo crea un driver para la Rx por el puerto Uart, basado en el código desarrollado por 
+//Felipe Veas de la USM. Este módulo permite configurar el baud rate (baudios) al que se reciben los datos desde
+//la PC, el valor que trae por defecto es 115200 baudios. Además permite configurar la frecuencia del reloj a la ´
+//que trabajara el módulo
+
 module uart_rx_driver (
 	input clk,
 	input reset,

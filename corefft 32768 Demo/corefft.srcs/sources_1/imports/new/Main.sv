@@ -1,4 +1,6 @@
 `timescale 1ns / 1ps
+//Módulo principal del diseño donde son instanciados los demás módulos
+
 module Main(
     input logic clkin,
     input logic uart_rx,

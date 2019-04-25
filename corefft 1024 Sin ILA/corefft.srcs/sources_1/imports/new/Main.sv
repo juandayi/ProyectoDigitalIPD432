@@ -1,11 +1,13 @@
 `timescale 1ns / 1ps
+
+//Módulo principal del diseño donde son instanciados los demás módulos
+
+
 module Main(
     input logic clkin,
     input logic uart_rx,
-    output logic uart_tx,
-    output  logic [6:0] LEDS,
-    output  logic [6:0] LEDS2
-//	output logic [7:0] Ena
+    output logic uart_tx
+    
 	
     );
 		
@@ -88,8 +90,8 @@ Save SaveUART (
         .rx_data(rx_data),
         .dir_in_uart(dir_in_uart),
         .in_uart(dato_uart_in),
-        .save_finish(save_finish),
-        .LED(LEDS)
+        .save_finish(save_finish)
+        
         ); 
 
         blk_mem_gen_0 datos_dominio_tiempo (
@@ -111,9 +113,8 @@ Save SaveUART (
         .dir_in_fft(dir_time),
         .dato_out_fft(dato_frequency),
         .dir_out_fft(dir_frequency),
-        .save_ok_frequency(save_ok_frequency),
-        .LED(LEDS2)
-
+        .save_ok_frequency(save_ok_frequency)
+        
             );
 	 blk_mem_gen_0 datos_dominio_frecuencia (
                      .clka(clk),    // input wire clka

@@ -1,5 +1,9 @@
 `timescale 1ns / 1ps
-//N numero de datos recibidos por la UART
+
+//Modulo encargado de recibir los datos enviados por la Uart y empaquetarlos en formato de 32
+//bits (16 bits datos reales y 16 bits datos imaginarios).
+
+//N numero de datos por muestra recibidos por la UART
 module Save #(parameter M=15, N = 32)(
     input logic clkin,
     input logic enable,

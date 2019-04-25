@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/impl_1'
+HD_PWD='D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log Main.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Main.tcl -notrace
 
 

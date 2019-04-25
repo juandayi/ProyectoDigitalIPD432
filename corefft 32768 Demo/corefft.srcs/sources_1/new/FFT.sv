@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-
+//Módulo donde son instanciados los módulos que permiten cargar y descargar los datos al Core FFT 
 
 module FFT #(parameter M = 15, N = 32)(
     input logic clkin,

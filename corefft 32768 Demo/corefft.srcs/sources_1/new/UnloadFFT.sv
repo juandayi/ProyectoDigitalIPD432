@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
-
+//Módulo encargado de descargar los datos transformados proporcionados por Core FFT. Siendo el
+//esclavo externo que le proporciona las senales necesarias para la comunicacion AXI4 Stream con el Core FFT
 
 
 module UnloadFFT #(parameter M=15, N = 32)(

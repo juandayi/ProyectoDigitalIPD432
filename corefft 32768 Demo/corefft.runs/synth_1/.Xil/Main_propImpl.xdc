@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc} rfile:../../../corefft.srcs/constrs_1/imports/new/Constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc} rfile:../../../corefft.srcs/constrs_1/imports/new/Constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports clkin]
 set_property src_info {type:XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]

@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
-
+//Módulo encargado de descargar los datos transformados proporcionados por Core FFT. Siendo el
+//esclavo externo que le proporciona las senales necesarias para la comunicacion AXI4 Stream con el Core FFT
 
 module UnloadFFT #(parameter M=10, N = 32)(
     input logic clk,
@@ -11,16 +12,16 @@ module UnloadFFT #(parameter M=10, N = 32)(
     output logic m_tready,
     output  logic [N-1:0] dato_frequency,
     output logic save_ok_frequency
-//    output  logic [6:0] LED
+
     );
     
      typedef enum logic [2:0] {IDLE, SAVE1, SET, WAITSAVE} state;
          state actual, proximo; 
                
                
-          localparam ADDRA_MAX = 10'd1023; //Maximo addres al que llega RAM
+          localparam ADDRA_MAX = 10'd1023; //Maximo address al que llega RAM
     
-//     logic rx_ok_reg = 1'd0;  // Detector cantos
+
                    logic [M :0] dir_frequency_next = 5'd0;
                    logic [N-1:0] dato_frequency_next;
                    logic m_tready_next;
@@ -41,7 +42,7 @@ module UnloadFFT #(parameter M=10, N = 32)(
                            IDLE: begin
                                
                                if (m_tvalid) begin   //recibo del core fft que hay una muestra de salida
-//                               LED=7'b1000000;
+
                                proximo = SAVE1;
                                end
                                else

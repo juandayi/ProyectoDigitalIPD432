@@ -2,12 +2,12 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Apr 12 23:37:51 2019
-# Process ID: 11564
-# Current directory: D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1
+# Start of session at: Wed Apr 24 22:32:41 2019
+# Process ID: 32396
+# Current directory: D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1
 # Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
-# Log file: D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1/Main.vds
-# Journal file: D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1\vivado.jou
+# Log file: D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1/Main.vds
+# Journal file: D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Main.tcl -notrace
 Command: synth_design -top Main -part xc7a100tcsg324-1
@@ -15,161 +15,161 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16676 
+INFO: Helper process launched with PID 36844 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 389.980 ; gain = 100.898
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 390.277 ; gain = 101.422
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Main' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/Main.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Main' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/Main.sv:4]
 	Parameter N bound to: 32 - type: integer 
 	Parameter M bound to: 15 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1/.Xil/Vivado-11564-DESKTOP-U2FBRCJ/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1/.Xil/Vivado-11564-DESKTOP-U2FBRCJ/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'uart_rx_driver' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_rx_driver.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1/.Xil/Vivado-32396-DESKTOP-U2FBRCJ/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1/.Xil/Vivado-32396-DESKTOP-U2FBRCJ/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_driver' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_rx_driver.sv:8]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
 	Parameter OVERSAMPLING bound to: 8 - type: integer 
 	Parameter ACC_WIDTH bound to: 18 - type: integer 
 	Parameter SHIFT_LIMITER bound to: 7 - type: integer 
 	Parameter INCREMENT bound to: 2416 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:36]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen' (2#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
-INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_rx.sv:10]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:36]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen' (2#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_rx.sv:10]
 	Parameter RX_IDLE bound to: 0 - type: integer 
 	Parameter RX_START bound to: 1 - type: integer 
 	Parameter RX_RECV bound to: 2 - type: integer 
 	Parameter RX_STOP bound to: 3 - type: integer 
 	Parameter RX_READY bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'data_sync' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/User_Custom_UartPort_1.0/data_sync.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'data_sync' (3#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/User_Custom_UartPort_1.0/data_sync.v:11]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_rx.sv:78]
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (4#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_rx.sv:10]
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx_driver' (5#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_rx_driver.sv:3]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx_driver' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_tx_driver.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'data_sync' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/User_Custom_UartPort_1.0/data_sync.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'data_sync' (3#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/User_Custom_UartPort_1.0/data_sync.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_rx.sv:78]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (4#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_rx.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_driver' (5#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_rx_driver.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_driver' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_tx_driver.sv:8]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen__parameterized0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'uart_baud_tick_gen__parameterized0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
 	Parameter CLK_FREQUENCY bound to: 100000000 - type: integer 
 	Parameter BAUD_RATE bound to: 115200 - type: integer 
 	Parameter OVERSAMPLING bound to: 1 - type: integer 
 	Parameter ACC_WIDTH bound to: 18 - type: integer 
 	Parameter SHIFT_LIMITER bound to: 4 - type: integer 
 	Parameter INCREMENT bound to: 302 - type: integer 
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
-INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen__parameterized0' (5#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_tx.sv:10]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:23]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud_tick_gen__parameterized0' (5#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_baud_tick_gen.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_tx.sv:10]
 	Parameter TX_IDLE bound to: 2'b00 
 	Parameter TX_START bound to: 2'b01 
 	Parameter TX_SEND bound to: 2'b10 
 	Parameter TX_STOP bound to: 2'b11 
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (6#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_tx.sv:10]
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx_driver' (7#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/uart_tx_driver.sv:3]
-INFO: [Synth 8-6157] synthesizing module 'Save' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/Save.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (6#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_tx.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_driver' (7#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/uart_tx_driver.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'Save' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/Save.sv:7]
 	Parameter M bound to: 15 - type: integer 
 	Parameter N bound to: 32 - type: integer 
 	Parameter ADDRA_MAX bound to: 15'b111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'Save' (8#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/Save.sv:3]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1/.Xil/Vivado-11564-DESKTOP-U2FBRCJ/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (9#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1/.Xil/Vivado-11564-DESKTOP-U2FBRCJ/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'FFT' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/FFT.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'Save' (8#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/Save.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1/.Xil/Vivado-32396-DESKTOP-U2FBRCJ/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (9#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1/.Xil/Vivado-32396-DESKTOP-U2FBRCJ/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FFT' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/FFT.sv:5]
 	Parameter M bound to: 15 - type: integer 
 	Parameter N bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'xfft_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1/.Xil/Vivado-11564-DESKTOP-U2FBRCJ/realtime/xfft_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'xfft_0' (10#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1/.Xil/Vivado-11564-DESKTOP-U2FBRCJ/realtime/xfft_0_stub.v:6]
-WARNING: [Synth 8-689] width (1) of port connection 's_axis_config_tdata' does not match port width (32) of module 'xfft_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/FFT.sv:38]
-INFO: [Synth 8-6157] synthesizing module 'LoadFFT' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/LoadFFT.sv:5]
-	Parameter M bound to: 15 - type: integer 
-	Parameter N bound to: 32 - type: integer 
-	Parameter ADDRA_MAX bound to: 15'b111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'LoadFFT' (11#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/LoadFFT.sv:5]
-INFO: [Synth 8-6157] synthesizing module 'UnloadFFT' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/UnloadFFT.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'xfft_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1/.Xil/Vivado-32396-DESKTOP-U2FBRCJ/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xfft_0' (10#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1/.Xil/Vivado-32396-DESKTOP-U2FBRCJ/realtime/xfft_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axis_config_tdata' does not match port width (32) of module 'xfft_0' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/FFT.sv:38]
+INFO: [Synth 8-6157] synthesizing module 'LoadFFT' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/LoadFFT.sv:7]
 	Parameter M bound to: 15 - type: integer 
 	Parameter N bound to: 32 - type: integer 
 	Parameter ADDRA_MAX bound to: 15'b111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'UnloadFFT' (12#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/UnloadFFT.sv:5]
-WARNING: [Synth 8-3848] Net s_axis_data_tlast in module/entity FFT does not have driver. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/FFT.sv:44]
-INFO: [Synth 8-6155] done synthesizing module 'FFT' (13#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/new/FFT.sv:5]
-INFO: [Synth 8-6157] synthesizing module 'SendUART' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/Sender.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'LoadFFT' (11#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/LoadFFT.sv:7]
+INFO: [Synth 8-6157] synthesizing module 'UnloadFFT' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/UnloadFFT.sv:6]
 	Parameter M bound to: 15 - type: integer 
 	Parameter N bound to: 32 - type: integer 
 	Parameter ADDRA_MAX bound to: 15'b111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'SendUART' (14#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/Sender.sv:2]
-INFO: [Synth 8-6155] done synthesizing module 'Main' (15#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/imports/new/Main.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'UnloadFFT' (12#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/UnloadFFT.sv:6]
+WARNING: [Synth 8-3848] Net s_axis_data_tlast in module/entity FFT does not have driver. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/FFT.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (13#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/new/FFT.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'SendUART' [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/Sender.sv:7]
+	Parameter M bound to: 15 - type: integer 
+	Parameter N bound to: 32 - type: integer 
+	Parameter ADDRA_MAX bound to: 15'b111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'SendUART' (14#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/Sender.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (15#1) [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/imports/new/Main.sv:4]
 WARNING: [Synth 8-3331] design LoadFFT has unconnected port config_tready
 WARNING: [Synth 8-3331] design Save has unconnected port enable
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 444.953 ; gain = 155.871
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 445.090 ; gain = 156.234
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -182,146 +182,146 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 444.953 ; gain = 155.871
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 445.090 ; gain = 156.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 444.953 ; gain = 155.871
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 445.090 ; gain = 156.234
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
-Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
-Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'FFT/FFTcore'
-Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'FFT/FFTcore'
-Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_tiempo'
-Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_tiempo'
-Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_frecuencia'
-Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_frecuencia'
-Parsing XDC File [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc]
-WARNING: [Vivado 12-584] No ports matched 'LEDS[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:34]
-WARNING: [Vivado 12-584] No ports matched 'LEDS[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:35]
-WARNING: [Vivado 12-584] No ports matched 'LEDS[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:36]
-WARNING: [Vivado 12-584] No ports matched 'LEDS[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:37]
-WARNING: [Vivado 12-584] No ports matched 'LEDS[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:38]
-WARNING: [Vivado 12-584] No ports matched 'LEDS[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:39]
-WARNING: [Vivado 12-584] No ports matched 'LEDS[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:40]
-WARNING: [Vivado 12-584] No ports matched 'LEDS2[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:41]
-WARNING: [Vivado 12-584] No ports matched 'LEDS2[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:42]
-WARNING: [Vivado 12-584] No ports matched 'LEDS2[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:43]
-WARNING: [Vivado 12-584] No ports matched 'LEDS2[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:44]
-WARNING: [Vivado 12-584] No ports matched 'LEDS2[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:45]
-WARNING: [Vivado 12-584] No ports matched 'LEDS2[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:46]
-WARNING: [Vivado 12-584] No ports matched 'LEDS2[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:47]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:52]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[7]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:53]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[10]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:54]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[15]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:55]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[18]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:56]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[20]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:57]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[25]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:58]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[31]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:59]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:60]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[9]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:61]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[12]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:62]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[19]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:63]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[21]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:64]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[24]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:65]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[28]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:66]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[13]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:67]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:68]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:69]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:70]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:71]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[8]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:72]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[16]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:73]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[22]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:74]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[27]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:75]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[29]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:76]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[30]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:77]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:78]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[11]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:79]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[14]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:80]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[17]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:81]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[23]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:82]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[26]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:83]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:84]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:85]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[7]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:86]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[11]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:87]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[21]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:88]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[25]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:89]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[27]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:90]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:91]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[14]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:92]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[15]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:93]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[17]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:94]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[18]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:95]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[24]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:96]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[28]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:97]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[29]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:98]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:99]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:100]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:101]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[10]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:102]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[13]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:103]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[16]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:104]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[23]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:105]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[30]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:106]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[31]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:107]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:108]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[8]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:109]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[9]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:110]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[12]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:111]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[19]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:112]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[20]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:113]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[22]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:114]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[26]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:115]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:116]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:117]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:118]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:119]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:120]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:121]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:122]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:123]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:124]
-WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc:125]
-Finished Parsing XDC File [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Main_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/constrs_1/imports/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
+Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'CLK'
+Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'FFT/FFTcore'
+Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'FFT/FFTcore'
+Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_tiempo'
+Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_tiempo'
+Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_frecuencia'
+Finished Parsing XDC File [d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'datos_dominio_frecuencia'
+Parsing XDC File [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LEDS[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'LEDS[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'LEDS[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'LEDS[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'LEDS[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'LEDS[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'LEDS[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'LEDS2[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'LEDS2[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'LEDS2[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'LEDS2[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'LEDS2[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'LEDS2[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'LEDS2[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:47]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:52]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[7]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:53]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[10]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:54]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[15]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:55]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[18]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:56]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[20]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:57]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[25]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:58]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[31]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:59]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[9]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:61]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[12]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:62]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[19]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:63]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[21]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[24]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:65]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[28]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:66]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[13]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:69]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:70]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:71]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[8]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:72]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[16]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:73]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[22]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:74]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[27]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:75]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[29]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:76]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[30]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:77]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:78]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[11]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:79]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[14]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[17]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:81]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[23]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:82]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/dina[26]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:83]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:84]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:85]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[7]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:86]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[11]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:87]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[21]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:88]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[25]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:89]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[27]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:90]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[6]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:91]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[14]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[15]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:93]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[17]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:94]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[18]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:95]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[24]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[28]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:97]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[29]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:98]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:99]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:101]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[10]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:102]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[13]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:103]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[16]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:104]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[23]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:105]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[30]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:106]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[31]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:107]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[5]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:108]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[8]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:109]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[9]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:110]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[12]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:111]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[19]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:112]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[20]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:113]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[22]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:114]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/doutb[26]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:115]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:116]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:117]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:118]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:119]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addra[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:120]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[0]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:121]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[1]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:122]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[2]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:123]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[3]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:124]
+WARNING: [Vivado 12-507] No nets matched 'your_instance_name/addrb[4]'. [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc:125]
+Finished Parsing XDC File [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Main_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/constrs_1/imports/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 800.762 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 801.000 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'datos_dominio_frecuencia' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'datos_dominio_tiempo' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 800.762 ; gain = 511.680
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 801.000 ; gain = 512.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 800.762 ; gain = 511.680
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 801.000 ; gain = 512.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clkin. (constraint file  {d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clkin. (constraint file  {d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clkin. (constraint file  {d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clkin. (constraint file  {d:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
 Applied set_property DONT_TOUCH = true for CLK. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for FFT/FFTcore. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for datos_dominio_frecuencia. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for datos_dominio_tiempo. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 800.762 ; gain = 511.680
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 801.000 ; gain = 512.145
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
 INFO: [Synth 8-5544] ROM "rx_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -415,7 +415,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'actual_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'actual_reg' using encoding 'sequential' in module 'SendUART'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 800.762 ; gain = 511.680
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 801.000 ; gain = 512.145
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -613,7 +613,7 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (\FFT/Load
 WARNING: [Synth 8-3332] Sequential element (FFT/LoadFFT/config_tvalid_reg) is unused and will be removed from module Main.
 WARNING: [Synth 8-3332] Sequential element (FFT/LoadFFT/config_tdata_reg) is unused and will be removed from module Main.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 800.762 ; gain = 511.680
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 801.000 ; gain = 512.145
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -627,13 +627,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'CLK/clk_out1' to pin 'CLK/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 800.762 ; gain = 511.680
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 801.000 ; gain = 512.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 813.410 ; gain = 524.328
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 812.750 ; gain = 523.895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -645,7 +645,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 814.941 ; gain = 525.859
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 814.355 ; gain = 525.500
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -670,7 +670,7 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-4442] BlackBox module \FFT/FFTcore  has unconnected pin s_axis_data_tlast
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 814.941 ; gain = 525.859
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 814.355 ; gain = 525.500
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -683,7 +683,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 814.941 ; gain = 525.859
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 814.355 ; gain = 525.500
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -695,25 +695,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 814.941 ; gain = 525.859
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 814.355 ; gain = 525.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 814.941 ; gain = 525.859
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 814.355 ; gain = 525.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 814.941 ; gain = 525.859
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 814.355 ; gain = 525.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 814.941 ; gain = 525.859
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 814.355 ; gain = 525.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -768,11 +768,11 @@ Report Instance Areas:
 |13    |    uart_tx_blk    |uart_tx                            |    27|
 +------+-------------------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 814.941 ; gain = 525.859
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 814.355 ; gain = 525.500
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 814.941 ; gain = 170.051
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 814.941 ; gain = 525.859
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 814.355 ; gain = 169.590
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 814.355 ; gain = 525.500
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -784,9 +784,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 98 Infos, 167 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 814.941 ; gain = 537.332
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 814.355 ; gain = 536.969
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 65535/corefft.runs/synth_1/Main.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/Proyecto Final Digital/corefft UART Block RAM con FFT UartTx 32768 Demo/corefft.runs/synth_1/Main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 814.941 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 12 23:38:33 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 814.355 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 22:33:32 2019...

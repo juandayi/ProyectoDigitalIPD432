@@ -1,5 +1,10 @@
 `timescale 1ns / 1ps
-//N numero de datos recibidos por la UART
+
+//Modulo encargado de recibir los datos enviados por la Uart y empaquetarlos en formato de 32
+//bits (16 bits datos reales y 16 bits datos imaginarios).
+
+
+//N numero de datos por muestra recibidos por la UART
 module Save #(parameter M=10, N = 32)(
     input logic clkin,
     input logic enable,
@@ -10,8 +15,8 @@ module Save #(parameter M=10, N = 32)(
     output logic ENA,
     output logic [M - 1:0] dir_in_uart,
     output logic [N - 1:0] in_uart,
-	output logic save_finish,
-	output  logic [6:0] LED
+	output logic save_finish
+	
     ); 
 		
 		typedef enum logic [3:0] {IDLE, SAVE1, SAVE2, SAVE3, WRITE} state;
@@ -26,24 +31,22 @@ module Save #(parameter M=10, N = 32)(
             logic [N-1:0] in_uart_next;
             logic ena_next, wea_next, save_finish_next;
            
-            // Maquina de estados
+            
              // Maquina de estados
             always_comb  begin
                 proximo = actual; // Por defecto
                 in_uart_next = in_uart;
                 dir_in_uart_next = dir_in_uart;
-//                ena_next = 1'b1;
-//                wea_next = 1'b1;
                 save_finish_next=1'b0;
-                case(actual)
+                
+                
+              case(actual)
 				
-                    IDLE: begin
-							LED=7'b0010000;
-//                        in_uart_next = 32'd0;
-                        if (rx_ready & ~rx_ok_reg) begin
+                    IDLE: begin		
+                         if (rx_ready & ~rx_ok_reg) begin
 							in_uart_next[15:8] = rx_data; //Primer paquete
 							proximo = SAVE1;
-							LED=7'b1000000;
+						
                         end
                         end
 						
@@ -87,11 +90,11 @@ module Save #(parameter M=10, N = 32)(
                        if (dir_in_uart == ADDRA_MAX) begin 
 							dir_in_uart_next = 5'd0; 
 							save_finish_next=1'b1; 
-							LED=7'b1000000;
+						
                        end//paquete listo
                        else begin
                             dir_in_uart_next = dir_in_uart + 5'd1;
-                            LED=7'b0100000;
+                            
                                            
                        end 
                      proximo = IDLE;  
@@ -110,8 +113,6 @@ module Save #(parameter M=10, N = 32)(
                     in_uart <= 31'd0;
                     actual <= IDLE;
                     rx_ok_reg <= 1'd0;
-//                  ENA <= 1'b0;
-//                  WEA <= 1'b0;
                     save_finish <= 1'b0;
                 end
                 else begin
@@ -119,8 +120,6 @@ module Save #(parameter M=10, N = 32)(
                     in_uart <= in_uart_next;
                     actual <= proximo;
                     rx_ok_reg <= rx_ready;
-//                  ENA <= ena_next;
-//                  WEA <= wea_next;
                     save_finish <=save_finish_next;
                 end
             end     
